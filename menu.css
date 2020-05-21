@@ -1,7 +1,6 @@
 /* Cover image styles */
-div.featured {
-    height: 800px;
-    background-color: #222222;
+div.featured img {
+    width: 100%;
 }
 
 /* Menu toggle styles */
