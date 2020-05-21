@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Coffee Bean</title>
+        <link rel="stylesheet" href="./common.css" type="text/css">
+        <link rel="stylesheet" href="./about.css" type="text/css">
+        <link rel="shortcut icon" href="./images/icon.png">
+    </head>
+    <body class="using-mouse">
+        <div id="header">
+            <div id="main-nav">
+                    <img src="./images/hamburgericon.png"  onclick="showNav()"  id="dropdownToggle">
+                    <a href="index.html" class="" id="nav-logo"><img class="logo" src="./images/logo.png" alt="COFFEE BEAN"></a>
+            </div>
+        </div>
+        <div id="dropdown">
+                <a href="./menu.html" tabindex="-1">MENU</a>
+                <a href="./grounds.html" tabindex="-1">GROUNDS</a>
+                <a href="./order.html" tabindex="-1">ORDER NOW</a>
+                <a href="./about.html" class="nav-self-link" tabindex="-1">ABOUT US</a>
+                <a href="./contact.html" tabindex="-1">CONTACT US</a>
+        </div>
+        <div class="container" id="main-container">
+            <img src="./images/logo.png" id="banner" alt="Coffee Bean">
+            <div id="content">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12" id="side-1">
+                        <div id="heritage"  class="text-block">
+                            <h3 class="phead"><img src="./images/icon.png" class="bullet-point">Our Heritage</h3>
+                            <p>Ever since it was founded by Andrew Lee in 2020, Coffee Bean has been providing quality coffee to all.</p>
+                        </div>
+                        <img src="./images/beanscloseup.jpg" class="about-img" alt="Close-up of coffee beans"><!-- Original Image By: Shutterbug75 -->
+                        <div id="locations"  class="text-block">
+                            <h3 class="phead"><img src="./images/icon.png" class="bullet-point">Our Locations</h3>
+                            <p>Lorem Ipsum...</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12" id="side-2">
+                        <img src="./images/coffeeshop.jpeg" class="about-img" id="coffeeshop" alt="Coffee shop"><!-- Original Image By: Afta Putta Gunawan -->
+                        <div id="employees" class="text-block">
+                            <h3 class="phead"><img src="./images/icon.png" class="bullet-point">Our Employees</h3>
+                            <p>Our employees are always happy to help customers with anything, and are specially trained </p>
+                        </div>
+                        <img src="./images/coffeecuppour.jpeg" class="about-img" alt="Pouring coffee"><!-- Original Image By: Chevanon Photography -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wda">
+            <table>
+                <tr id="row-1">
+                    <td><a href="./index.html">HOME</a></td>
+                    <td><a href="./menu.html">MENU</a></td>
+                    <td><a href="./grounds.html">GROUNDS</a></td>
+                    <td><a href="./order.html">ORDER NOW</a></td>
+                    <td><a href="./contact.html">CONTACT US</a></td>
+                </tr>
+            </table>
+            <table id="margin-top-20px">
+                <tr>
+                    <td><img src="./images/twitter.png" class="social-media-img"></td>
+                    <td><img src="./images/instagram.png" class="social-media-img"></td>
+                    <td><img src="./images/facebook.png" class="social-media-img"></td>
+                    <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="./images/youtube.png" class="social-media-img"></a></td>
+                    <td><img src="./images/snapchat.png" class="social-media-img"></td>
+                </tr>
+            </table>
+        </div>
+        <script src="./common.js"></script>
+        <script src="./about.js"></script>
+    </body>
+</html>

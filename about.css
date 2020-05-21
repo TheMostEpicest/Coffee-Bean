@@ -1,0 +1,36 @@
+#main-container {
+    padding-bottom: 40px;
+}
+#banner {
+    padding: 60px 10%;
+    width: 100%;
+    background-color: #bfb59b;
+}
+#side-1, #side-2 {
+    padding-top: 40px;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.text-block h3 {
+    font-size: 45px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+.text-block h3 img {
+    height: 45px;
+    vertical-align: -10%;
+    margin-right: 15px;
+}
+.text-block p {
+    margin: 20px 40px 0px 40px; 
+    font-size: 20px;
+    text-align: justify;
+}
+.about-img {
+    width: 100%;
+    padding: 40px 0px 20px;
+}
+img#coffeeshop {
+    padding-top: 0px;
+}

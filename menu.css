@@ -1,0 +1,102 @@
+/* Cover image styles */
+div.featured {
+    height: 800px;
+    background-color: #222222;
+}
+
+/* Menu toggle styles */
+div.toggle {
+    background-color: #bfb59b;
+    border-top: 1px solid #000000;
+    cursor: pointer;
+}
+.toggle-arrow {
+    height: 20px;
+    display: inline-block;
+    vertical-align: -10%;
+    margin-left: 15px;
+    transition: 0s transform;
+}
+.toggle-h3 {
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Menu content styles */
+.content {
+    transition: 0s height;
+    height: 0px;
+    overflow: hidden;
+}
+div.menuItem {
+    height: 300px;
+    cursor: pointer;
+}
+img.menuItem {
+    border-radius: 50%;
+    height: 200px;
+    display: block;
+    margin: 25px auto;
+    transition: left 1s, top 1s;
+}
+h4.menuItem {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Pop-up display styles */
+#infoTable {
+    position: fixed;
+    height: 80vh;
+    width: 80vw;
+    left: 10vw;
+    top: 10vh;
+    background-color: #ffffff;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s opacity;
+    border: 2px solid #000000;
+}
+#itemContents {
+    margin-top: 15vh;
+}
+#itemImage {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    height: 40vh;
+}
+#itemName {
+    font-size: 60px;
+    margin-left: 30px;
+}
+#itemCalorie {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#itemCaffine {
+    font-size: 20px;
+    margin-left: 30px;
+}
+#itemDescription {
+    font-size: 30px;
+    margin-top: 30px;
+    padding-right: 50px;
+    margin-left: 30px;
+}
+#asterisk-definitions {
+    padding: 12px 0px 5px 15px;
+    border-top: 1px solid #000000;
+    background-color: #bfb59b;
+}
+#infoX {
+    display: block;
+    height: 3vh;
+    width: 3vh;
+    margin: 2vh 4vh 0px auto;
+    cursor: pointer;
+}

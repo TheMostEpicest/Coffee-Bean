@@ -1,0 +1,184 @@
+/* Cover Image styles */
+div.cover-image {
+    width: 100%;
+}
+.cover-image img {
+    width: 100%;
+}
+
+/* Product Quickview styles */
+div.product-quickview {
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+div.preview-row {
+    margin: 0px auto;
+}
+div.preview {
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    z-index: 50;
+}
+a.preview {
+    text-align: center;
+    margin: 15px auto 0px;
+    font-size: 20px;
+    font-family: "Trebuchet MS";
+    text-decoration: none;
+    color: #634727;
+    
+}
+img.preview {
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+div.a-underline {
+    height: 2px;
+    margin-top: 2px;
+    background-color: #ffffff;
+    transition: 0.5s background-color;
+}
+#under-hot {
+    width: 42%;
+    margin-left: 29%;
+}
+#under-cold {
+    width: 45%;
+    margin-left: 27.5%;
+}
+#under-baked {
+    width: 50%;
+    margin-left: 25%;
+}
+#under-grounds {
+    width: 60%;
+    margin-left: 20%;
+}
+a.preview:hover div.a-underline, a.preview:focus div.a-underline {
+    background-color: #634727;
+}
+
+/* Owner div styles */
+div.owner {
+    background-color: #bfb59b;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 100%;
+}
+#owner-img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 75% 0;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    margin: 0 auto 0 0;
+    display: block;
+}
+#owner-h1 {
+    text-align: center;
+    color: #0d5206;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+#owner-h3 {
+    display: block;
+    width: 400px;
+    margin: 50px auto 25px auto;
+    line-height: 1.6;
+    color: #634727;
+    text-align: justify;
+    
+}
+
+/* Testimony div styles */
+div.testimonies {
+    width: 100%;
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+.testimonies img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: ;
+    height: 200px;
+    width: 200px;
+    display: block;
+}
+#testimony1-img {
+    margin: 0px auto 0px auto;
+}
+#testimony2-img {
+    margin: 0px auto 0px auto;
+}
+.testimonies h3 {
+    font-size: 40px;
+    display: block;
+    padding: 25px 25px 0px;
+    width: 80%;
+    vertical-align: middle;
+    color: #634727;
+}
+#testimony1 {
+    background-image: url("./images/quotemark.png");
+    background-repeat: no-repeat;
+    background-size: auto 75px;
+    background-position: 0% -5%;
+    margin: 25px auto 50px auto;
+    
+}
+#testimony2 {
+    background-image: url("./images/quotemark.png");
+    background-repeat: no-repeat;
+    background-size: auto 75px;
+    background-position: 0% -5%;
+    margin: 50px auto 25px auto;
+}
+
+/* Order div styles */
+div.order-now {
+    background-color: #bfb59b;
+    width: 100%;
+    padding-top: 109px;
+    padding-bottom: 109px;
+}
+#order-img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 0px auto 32px;
+    border-radius: 50%;
+    transition: 0.5s height, 0.5s padding;
+}
+#order-btn-div {
+    margin: 0px auto;
+    width: fit-content;
+    display: block;
+}
+#order-btn {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    color: #634727;
+    font-size: 20px;
+    text-decoration: none;    
+}
+#under-order {
+    width: 110%;
+    height: 2px;
+    margin-top; 2px;
+    margin-left: -5%;
+    background-color: ;
+    transition: 0.5s background-color;
+}
+#order-btn:hover #under-order, #order-btn:focus #under-order {
+    background-color: #634727;
+}

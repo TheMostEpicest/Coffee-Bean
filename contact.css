@@ -1,0 +1,25 @@
+#main-container {
+    height: 1000px; /* Remove later */
+}
+#banner {
+    padding: 60px 10%;
+    width: 100%;
+    background-color: #bfb59b;
+}
+#contact-title {
+    text-align: center;
+    font-size: 5vw;
+    color: #3d342b;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.contact-info {
+    margin: 40px;
+    font-size: 1.5vw;
+    color: #634727;
+}
+#final-logo {
+    margin: 30px auto;
+    width: 5vw;
+    display: block;
+}

@@ -1,0 +1,118 @@
+/* Font-face declaration */
+@font-face {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trebuchet MS'), url('trebuc.woff') format('woff');
+}
+
+/* Colors */
+/*
+Brown: #634727
+Light Brown: #bfb59b
+Dark Brown: #3d342b
+Maroon: #6b0606
+Navy Green: #26781d
+*/
+
+/* Nav styles */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #bfb59b;
+    z-index: 200;
+}
+img.logo {
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #bfb59b;
+    transition: 0.5s border-color;
+}
+img.logo:hover {
+    border-color: #634727;
+}
+#dropdownToggle {
+    height: 30px;
+    margin: 10px 25px 10px 30px;
+    cursor: pointer;
+}
+#dropdown {
+    position: fixed;
+    width: 100%;
+    background-color: #bfb59b;
+    z-index: 100;
+    top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: ;
+}
+#dropdown a {
+    display: inline-block;
+    font-size: 20px;
+    color: #634727;
+    text-decoration: none;
+    padding: 5px 5px 0px;
+    margin: 5px 5px 10px;
+    border-bottom: 2px solid #bfb59b;
+    transition: 0.5s border-color;
+}
+#dropdown a:hover {
+    border-color: #634727;
+}
+.nav-self-link {
+    border-bottom-color: #634727 !important;
+}
+
+/* General styles */
+html {
+    min-width: 275px;
+}
+body {
+    background-color: #e0e0e0;
+    font-family: 'Trebuchet MS';
+    overflow-x: hidden;
+    background-image: url(images/beansbackground.png); /* Original Image By: Undulatus */
+    background-repeat: repeat-x;
+    background-position: bottom center;
+}
+body.using-mouse :focus {
+    outline: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    padding: 0px;
+}
+#main-container {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+/* Web Disablity Act styles */
+div.wda {
+    background-color: black;
+    height: 120px;
+    display: block;
+    padding-top: 15px;
+}
+.wda table {
+    margin: 0px auto;
+}
+.wda td {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.wda a {
+    color: #ffffff;
+}
+#margin-top-20px {
+    margin-top: 20px;
+}
+.wda img {
+    height: 35px;
+}

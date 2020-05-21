@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Coffee Bean</title>
+        <link rel="stylesheet" href="./common.css" type="text/css">
+        <link rel="stylesheet" href="./menu.css" type="text/css">
+        <link rel="shortcut icon" href="./images/icon.png">
+    </head>
+    <body class="using-mouse">
+        <div id="header">
+            <div id="main-nav">
+                    <img src="./images/hamburgericon.png"  onclick="showNav()"  id="dropdownToggle" tabindex="0">
+                    <a href="index.html" class="" id="nav-logo"><img class="logo" src="./images/logo.png" alt="COFFEE BEAN"></a>
+            </div>
+        </div>
+        <div id="dropdown">
+                <a href="./menu.html" class="nav-self-link" tabindex="-1">MENU</a>
+                <a href="./grounds.html" tabindex="-1">GROUNDS</a>
+                <a href="./order.html" tabindex="-1">ORDER NOW</a>
+                <a href="./about.html" tabindex="-1">ABOUT US</a>
+                <a href="./contact.html" tabindex="-1">CONTACT US</a>
+        </div>
+        <div class="container" id="main-container">
+            <div class="featured">
+                
+            </div>
+            <div id="hotDrinks" class="itemDropdown">
+                <div class="toggle" onclick="expandMenu('hotDrinks')" tabindex="0">
+                    <img src="./images/arrow.png" class="toggle-arrow" id="toggle-arrow-hotDrinks">
+                    <h3 class="toggle-h3">Hot Drinks</h3>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Americano')">
+                            <img src="./images/hotcoffeepost.png" class="menuItem" id="AmericanoImage"><!-- Original Image By: Pikrepo -->
+                            <h4 class="menuItem">Americano</h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Cappuccino')">
+                            <img src="./images/hotcoffeepost.png" class="menuItem" id="CappuccinoImage">
+                            <h4 class="menuItem">Cappuccino <sup>&#10013;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Espresso')">
+                            <img src="./images/hotcoffeepost.png" class="menuItem" id="EspressoImage">
+                            <h4 class="menuItem">Espresso</h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Latte')">
+                            <img src="./images/hotcoffeepost.png" class="menuItem" id="LatteImage">
+                            <h4 class="menuItem">Latte <sup>&#10013;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Machiatto')">
+                            <img src="./images/hotcoffeepost.png" class="menuItem" id="MachiattoImage">
+                            <h4 class="menuItem">Machiatto <sup>&#10013;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Mocha')">
+                            <img src="./images/hotcoffeepost.png" class="menuItem" id="MochaImage">
+                            <h4 class="menuItem">Mocha <sup>&#10013;</sup></h4>
+                        </div>
+                    </div>
+                    <div id="hotDrinks-tag">
+                    </div>
+                </div>
+            </div>
+            <div id="coldDrinks" class="itemDropdown">
+                <div class="toggle" onclick="expandMenu('coldDrinks')" tabindex="0">
+                    <img src="./images/arrow.png" class="toggle-arrow" id="toggle-arrow-coldDrinks">
+                    <h3 class="toggle-h3">Cold Drinks</h3>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Iced Americano')">
+                            <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced AmericanoImage"><!-- Original Image By: Michael Sheehan -->
+                            <h4 class="menuItem">Iced Americano</h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Iced Cappuccino')">
+                            <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced CappuccinoImage">
+                            <h4 class="menuItem">Iced Cappuccino <sup>&#10013;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Iced Espresso')">
+                            <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced EspressoImage">
+                            <h4 class="menuItem">Iced Espresso</h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Iced Latte')">
+                            <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced LatteImage">
+                            <h4 class="menuItem">Iced Latte <sup>&#10013;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Iced Machiatto')">
+                            <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced MachiattoImage">
+                            <h4 class="menuItem">Iced Machiatto <sup>&#10013;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Iced Mocha')">
+                            <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced MochaImage">
+                            <h4 class="menuItem">Iced Mocha <sup>&#10013;</sup></h4>
+                        </div>
+                    </div>
+                    <div id="coldDrinks-tag">
+                    </div>
+                </div>
+            </div>
+            <div id="bakedGoods" class="itemDropdown">
+                <div class="toggle" onclick="expandMenu('bakedGoods')" tabindex="0">
+                    <img src="./images/arrow.png" class="toggle-arrow" id="toggle-arrow-bakedGoods">
+                    <h3 class="toggle-h3">Baked Goods</h3>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Croissant')">
+                            <img src="./images/croissantpost.png" class="menuItem" id="CroissantImage"><!-- Original Image By: Abdulrhman Elkady -->
+                            <h4 class="menuItem">Croissant <sup>&#10045;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Cookie')">
+                            <img src="./images/cookiepost.png" class="menuItem" id="CookieImage"><!-- Original Image By: Anna Cervova -->
+                            <h4 class="menuItem">Cookie <sup>&#10045;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Cinnamon Roll')">
+                            <img src="./images/cinnamonrollpost.png" class="menuItem" id="Coffee CakeImage"><!-- Original Image By: Adam Kontor -->
+                            <h4 class="menuItem">Cinnamon Roll <sup>&#10045;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Doughnut')">
+                            <img src="./images/doughnutpost.png" class="menuItem" id="DoughnutImage"><!-- Original Image By: Evan Amos -->
+                            <h4 class="menuItem">Doughnut <sup>&#10045;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Bagel')">
+                            <img src="./images/bagelpost.png" class="menuItem" id="BagelImage"><!-- Original Image By: Evan Amos -->
+                            <h4 class="menuItem">Bagel <sup>&#10013;&#10013;</sup></h4>
+                        </div>
+                        <div class="col-md-4 col-xs-6 menuItem" onclick="displayInfo('Muffin')">
+                            <img src="./images/muffinpost.png" class="menuItem" id="MuffinImage"><!-- Original Image By: Renee Comet -->
+                            <h4 class="menuItem">Muffin <sup>&#10045;</sup></h4>
+                        </div>
+                    </div>
+                    <div id="bakedGoods-tag">
+                    </div>
+                </div>
+            </div>
+            <div id="asterisk-definitions">
+                <p>
+                    <sup>&#10013;</sup> Contains dairy
+                    <br />
+                    <sup>&#10013;&#10013;</sup> Contains gluten
+                    <br />
+                    <sup>&#10045;</sup> Contains egg, gluten, and dairy
+                </p>
+            </div>
+        </div>
+        <div class="wda">
+            <table>
+                <tr id="row-1">
+                    <td><a href="./index.html">HOME</a></td>
+                    <td><a href="./grounds.html">GROUNDS</a></td>
+                    <td><a href="./order.html">ORDER NOW</a></td>
+                    <td><a href="./about.html">ABOUT US</a></td>
+                    <td><a href="./contact.html">CONTACT US</a></td>
+                </tr>
+            </table>
+            <table id="margin-top-20px">
+                <tr>
+                    <td><img src="./images/twitter.png" class="social-media-img"></td>
+                    <td><img src="./images/instagram.png" class="social-media-img"></td>
+                    <td><img src="./images/facebook.png" class="social-media-img"></td>
+                    <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="./images/youtube.png" class="social-media-img"></a></td>
+                    <td><img src="./images/snapchat.png" class="social-media-img"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="infoTable">
+            <div class="row">
+                <img src="./images/xbutton.png" alt="X Button" id="infoX" onclick="hideInfo()">
+            </div>
+            <div class="row" id="itemContents">
+                <div class="col-md-6">
+                    <img src="" id="itemImage">
+                </div>
+                <div class="col-md-6">
+                    <h4 id="itemName"></h4>
+                    <p id="itemCalorie"></p>
+                    <p id="itemCaffine"></p>
+                    <p id="itemDescription"></p>
+                </div>
+            </div>
+        </div>
+        <script src="./common.js"></script>
+        <script src="./menu.js"></script>
+    </body>
+</html>

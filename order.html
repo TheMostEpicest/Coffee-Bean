@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Coffee Bean</title>
+        <link rel="stylesheet" href="./common.css" type="text/css">
+        <link rel="stylesheet" href="./order.css" type="text/css">
+        <link rel="shortcut icon" href="./images/icon.png">
+    </head>
+    <body class="using-mouse">
+        <div id="header">
+            <div id="main-nav">
+                    <img src="./images/hamburgericon.png"  onclick="showNav()"  id="dropdownToggle">
+                    <a href="index.html" class="" id="nav-logo"><img class="logo" src="./images/logo.png" alt="COFFEE BEAN"></a>
+            </div>
+        </div>
+        <div id="dropdown">
+                <a href="./menu.html" tabindex="-1">MENU</a>
+                <a href="./grounds.html" tabindex="-1">GROUNDS</a>
+                <a href="./order.html" class="nav-self-link" tabindex="-1">ORDER NOW</a>
+                <a href="./about.html" tabindex="-1">ABOUT US</a>
+                <a href="./contact.html" tabindex="-1">CONTACT US</a>
+        </div>
+        <div class="container" id="main-container">
+            <h1 id="title">Order</h1>
+            <h2 id="subtitle">From Coffee Bean</h2>
+            <div id="progress-container">
+                <div id="previous-button" onClick="previousStep()" class="hover-show"><span>&laquo;</span>Back</div>
+                <div class="progress-circle" id="progress-1">1</div>
+                <div class="progress-line" id="progress-1-2"></div>
+                <div class="progress-circle" id="progress-2">2</div>
+                <div class="progress-line" id="progress-2-3"></div>
+                <div class="progress-circle" id="progress-3">3</div>
+                <div id="next-button" onClick="nextStep()" class="hover-show">Next<span>&raquo;</span></div>
+            </div>
+            <div id="order-menu">
+                <h3 id="order-menu-title">Select Items</h3>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Americano')">
+                        <img src="./images/hotcoffeepost.png" class="menuItem" id="AmericanoImage"><!-- Original Image By: Pikrepo -->
+                        <h4 class="menuItem">Americano</h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Cappuccino')">
+                        <img src="./images/hotcoffeepost.png" class="menuItem" id="CappuccinoImage">
+                        <h4 class="menuItem">Cappuccino <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Espresso')">
+                        <img src="./images/hotcoffeepost.png" class="menuItem" id="EspressoImage">
+                        <h4 class="menuItem">Espresso</h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Latte')">
+                        <img src="./images/hotcoffeepost.png" class="menuItem" id="LatteImage">
+                        <h4 class="menuItem">Latte <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Machiatto')">
+                        <img src="./images/hotcoffeepost.png" class="menuItem" id="MachiattoImage">
+                        <h4 class="menuItem">Machiatto <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Mocha')">
+                        <img src="./images/hotcoffeepost.png" class="menuItem" id="MochaImage">
+                        <h4 class="menuItem">Mocha <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Iced Americano')">
+                        <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced AmericanoImage"><!-- Original Image By: Michael Sheehan -->
+                        <h4 class="menuItem">Iced Americano</h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Iced Cappuccino')">
+                        <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced CappuccinoImage">
+                        <h4 class="menuItem">Iced Cappuccino <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Iced Espresso')">
+                        <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced EspressoImage">
+                        <h4 class="menuItem">Iced Espresso</h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Iced Latte')">
+                        <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced LatteImage">
+                        <h4 class="menuItem">Iced Latte <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Iced Machiatto')">
+                        <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced MachiattoImage">
+                        <h4 class="menuItem">Iced Machiatto <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Iced Mocha')">
+                        <img src="./images/coldcoffeepost.png" class="menuItem" id="Iced MochaImage">
+                        <h4 class="menuItem">Iced Mocha <sup>&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Croissant')">
+                        <img src="./images/croissantpost.png" class="menuItem" id="CroissantImage"><!-- Original Image By: Abdulrhman Elkady -->
+                        <h4 class="menuItem">Croissant <sup>&#10045;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Cookie')">
+                        <img src="./images/cookiepost.png" class="menuItem" id="CookieImage"><!-- Original Image By: Anna Cervova -->
+                        <h4 class="menuItem">Cookie <sup>&#10045;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Cinnamon Roll')">
+                        <img src="./images/cinnamonrollpost.png" class="menuItem" id="Coffee CakeImage"><!-- Original Image By: Adam Kontor -->
+                        <h4 class="menuItem">Cinnamon Roll <sup>&#10045;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Doughnut')">
+                        <img src="./images/doughnutpost.png" class="menuItem" id="DoughnutImage"><!-- Original Image By: Evan Amos -->
+                        <h4 class="menuItem">Doughnut <sup>&#10045;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Bagel')">
+                        <img src="./images/bagelpost.png" class="menuItem" id="BagelImage"><!-- Original Image By: Evan Amos -->
+                        <h4 class="menuItem">Bagel <sup>&#10013;&#10013;</sup></h4>
+                    </div>
+                    <div class="col-md-4 col-xs-6 menuItem" onclick="askQuantity('Muffin')">
+                        <img src="./images/muffinpost.png" class="menuItem" id="MuffinImage"><!-- Original Image By: Renee Comet -->
+                        <h4 class="menuItem">Muffin <sup>&#10045;</sup></h4>
+                    </div>
+                </div>
+            </div>
+            <div id="order-payment">
+                <h3 id="order-check-title">Confirm your Selections</h3>
+                <div id="order-check">
+                </div>
+                <h3 id="order-payment-title">Select Payment</h3>
+                <table>
+                    <tr>
+                        <td id="Credit-Card-Number">Credit Card Number<br/><input type="number"></td>
+                        <td id="Card-CVV">CVV<br/><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td id="Card-First-Name">First Name<br/><input type="text"></td>
+                        <td id="Card-Last-Name">Last Name<br/><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td id="Card-Expiration-Month">Expiration Month<br/><input type="number"></td>
+                        <td id="Card-Expiration-Year">Expiration Year<br/><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td id="Billing-Address-1" colspan="2">Billing Address Line 1<br/><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td id="Billing-Address-2" colspan="2">Billing Address Line 2<br/><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td id="Billing-City">City<br/><input type="text"></td>
+                        <td id="Billing-State-Province">State<br/><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td id="Billing-Zip-Code">Zip code<br/><input type="number"></td>
+                        <td id="Email">Email Address<br/><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="order-complete">
+                <h3 id="order-complete-title">Your Order is Complete</h3>
+            </div>
+        </div>
+        <div class="wda">
+            <table>
+                <tr id="row-1">
+                    <td><a href="./index.html">HOME</a></td>
+                    <td><a href="./menu.html">MENU</a></td>
+                    <td><a href="./grounds.html">GROUNDS</a></td>
+                    <td><a href="./about.html">ABOUT US</a></td>
+                    <td><a href="./contact.html">CONTACT US</a></td>
+                </tr>
+            </table>
+            <table id="margin-top-20px">
+                <tr>
+                    <td><img src="./images/twitter.png" class="social-media-img"></td>
+                    <td><img src="./images/instagram.png" class="social-media-img"></td>
+                    <td><img src="./images/facebook.png" class="social-media-img"></td>
+                    <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="./images/youtube.png" class="social-media-img"></a></td>
+                    <td><img src="./images/snapchat.png" class="social-media-img"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="quantity-select">
+            <h5>Select Quantity</h5>
+            <input type="number" id="quantity" onsubmit="addItem()">
+            <h6 onclick="addItem()">Enter</h6>
+            <img src="images/xbutton.png" onclick="cancelAdd()">
+        </div>
+        <script src="./common.js"></script>
+        <script src="./order.js"></script>
+    </body>
+</html>
